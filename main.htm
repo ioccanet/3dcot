@@ -400,7 +400,7 @@
 				var weightFinal = volumeFinal * density;weightFinal = weightFinal.toFixed(2);
 				var finalCost = weightFinal * filament_cost / 1000;
 				finalCost = parseFloat(finalCost).toFixed(2);
-				document.getElementById("costValue").innerHTML = finalCost/10;
+				document.getElementById("costValue").innerHTML = finalCost*10;
 				}
 
 			function moreDiameter(a)
