@@ -56,7 +56,7 @@
 			var container, camera, scene, renderer, controls, light, vol, mesh, height, heightFinal, width, widthFinal, depth, depthFinal;
 
 			var density = parseFloat("1.05");
-			var filament_cost = parseFloat("10000")/10;
+			var filament_cost = parseFloat("10000");
 			var filament_diameter = parseFloat("1.75");
 			var printing_speed = parseFloat("45");
 
@@ -247,7 +247,7 @@
 						document.getElementById("widthValue").innerHTML = widthFinal; 
 						document.getElementById("depthValue").innerHTML = depthFinal;
 						document.getElementById("heightValue").innerHTML = heightFinal;
-						document.getElementById("costKilogramValue").innerHTML = filament_cost;
+						document.getElementById("costKilogramValue").innerHTML = filament_cost/10;
 						document.getElementById("costValue").innerHTML = finalCost;
 						document.getElementById("diameterValue").innerHTML = filament_diameter;
 						document.getElementById("speedValue").innerHTML = printing_speed;
