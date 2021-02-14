@@ -21,7 +21,7 @@
 				<span id="volumeLabel"></span>:&nbsp;<span id="volumeValue"></span>&nbsp;cm3<br />
 				<span id="sizeLabel"></span>:&nbsp;<span id="widthValue"></span>&nbsp;x&nbsp;<span id="heightValue"></span>&nbsp;x&nbsp;<span id="depthValue"></span>&nbsp;cm<br />
 				<hr class="separator"/>
-				<span id="costKilogramLabel"></span>:&nbsp;$<span id="costKilogramValue"/10></span>&nbsp;<input type="submit" class="buttonChanger" onclick="moreCost(true);" value="+"/>&nbsp;<input type="submit" class="buttonChanger" onclick="moreCost(false);" value="-"/><br />
+				<span id="costKilogramLabel"></span>:&nbsp;$<span id="costKilogramValue"></span>&nbsp;<input type="submit" class="buttonChanger" onclick="moreCost(true);" value="+"/>&nbsp;<input type="submit" class="buttonChanger" onclick="moreCost(false);" value="-"/><br />
 				<span id="costLabel"></span>:&nbsp;$<span id="costValue"></span><br />
 				<hr class="separator"/>
 				<span id="diameterLabel"></span>:&nbsp;<span id="diameterValue"></span>&nbsp;mm&nbsp;<input type="submit" class="buttonChanger" onclick="moreDiameter(true);" value="+"/>&nbsp;<input type="submit" class="buttonChanger" onclick="moreDiameter(false);" value="-"/><br />
@@ -56,7 +56,7 @@
 			var container, camera, scene, renderer, controls, light, vol, mesh, height, heightFinal, width, widthFinal, depth, depthFinal;
 
 			var density = parseFloat("1.05");
-			var filament_cost = parseFloat("10000");
+			var filament_cost = parseFloat("10000")/10;
 			var filament_diameter = parseFloat("1.75");
 			var printing_speed = parseFloat("45");
 
